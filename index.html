@@ -1,59 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+.palette {
+  color: #2b2d42;
+  color: #8d99ae;
+  color: #edf2f4;
+  color: #ef233c;
+  color: #d90429;
+}
+body {
+  font-family: "Space Mono", monospace;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  color-scheme: light dark;
+  color: #edf2f4;
+  background-color: #2b2d42;
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  margin: 0;
+  padding: 0;
 
-    <link rel="stylesheet" href="./style.css">
-</head>
+  height: 100vh;
+  aspect-ratio: 1.77;
+}
+.main {
+  color: #ef233c;
+}
 
-<body>
-    <header class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <section class="home">
-        <h1>
-            Hi! I am
-        </h1>
-        <h2>Thiago M. Vasconcelos</h2>
-        <h3>
-            And I'm a <span class="main" id="titles"></span>
-        </h3>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est maiores voluptate numquam. Lorem
-            ipsum,
-            dolor sit amet consectetur adipisicing elit.
-        </h4>
-        <div class="accounts">
-            <div class="tooltip">
-                <a href="https://www.linkedin.com/in/thiago-vasconcelos-a5a05926b/" target="_blank"><box-icon
-                        name='linkedin' type='logo'></box-icon></a>
-                <span class="tooltiptext">LinkedIn</span>
-            </div>
-            <div class="tooltip">
-                <a href="https://github.com/thiagomvas" target="_blank"><box-icon type='logo' name='github'><span
-                            class="tooltip"></span></box-icon></a>
-                <span class="tooltiptext">GitHub</span>
-            </div>
-            <div class="tooltip">
+.home {
+  font-family: "Space Mono", monospace;
 
-                <a href="#" target="_blank"><box-icon type='solid' name='report'><span
-                            class="tooltip"></span></box-icon></box-icon></a>
-                <span class="tooltiptext">Resume</span>
-            </div>
-        </div>
-    </section>
+  color-scheme: light dark;
+  color: #edf2f4;
+  margin: 0;
+  font-weight: bold;
 
+  margin-inline-start: 10%;
 
-    <script src="./main.js"></script>
-</body>
+  position: relative;
 
-</html>
+  width: 60%;
+  height: 100%;
+}
+
+.home > h1,
+h4 {
+  position: relative;
+  top: 40%;
+  font-size: 150%;
+  width: 100%;
+  margin: 0;
+  color: #8d99ae;
+}
+
+.home > h2 {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  margin: 0;
+  font-size: 300%;
+}
+.home > h3 {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  margin: 0;
+  color: #8d99ae;
+  font-size: 225%;
+}
+
+.accounts {
+  position: relative;
+  top: 42%;
+  scale: inherit;
+  left: 3%;
+
+  scale: 150%;
+
+  float: left;
+  filter: invert(100%);
+}
+
+.navbar {
+  background-color: #8d99ae;
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  list-style-type: none;
+}
+
+.navbar li,
+.navbar a {
+  all: unset;
+  display: inline;
+  float: left;
+  padding-left: 2%;
+}
+
+.about-me {
+  position: relative;
+  top: 25vh;
+  background-color: #2b2d42;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  width: 35%;
+  height: 50%;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  border-radius: 25px;
+  padding: 1%;
+}
+
+.grid-title {
+  position: relative;
+  font-size: 200%;
+  top: 7%;
+  left: 14%;
+}
+
+.grid-item {
+  position: relative;
+  top: 10%;
+  padding: 25%;
+  font-size: 300%;
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320%;
+  background-color: #726651;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5% 0;
+
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
