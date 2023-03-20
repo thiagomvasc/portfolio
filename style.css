@@ -1,0 +1,110 @@
+.palette {
+  color: #2b2d42;
+  color: #8d99ae;
+  color: #edf2f4;
+  color: #ef233c;
+  color: #d90429;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+
+  color-scheme: light dark;
+  color: #edf2f4;
+  background-color: #2b2d42;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  width: 100vh;
+}
+.main {
+  color: #ef233c;
+}
+
+.about-me {
+  font-family: "Space Mono", monospace;
+
+  color-scheme: light dark;
+  color: #edf2f4;
+  background-color: #2b2d42;
+  margin: 0;
+  font-weight: bold;
+
+  position: absolute;
+
+  top: 250px;
+  left: 75px;
+  width: 50%;
+}
+
+.about-me > h1,
+h4 {
+  position: relative;
+  font-size: 25px;
+  margin: 0;
+  color: #8d99ae;
+}
+
+.about-me > h2 {
+  margin: 0;
+  font-size: 50px;
+}
+.about-me > h3 {
+  margin: 0;
+  color: #8d99ae;
+  font-size: 35px;
+}
+
+.accounts {
+  position: relative;
+  top: 10px;
+  scale: inherit;
+  left: 20px;
+
+  scale: 150%;
+
+  float: left;
+  filter: invert(100%);
+}
+
+.navbar {
+  background-color: #8d99ae;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+}
+
+.navbar li,
+.navbar a {
+  all: unset;
+  display: inline;
+  float: left;
+  padding-left: 19px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
