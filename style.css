@@ -109,7 +109,17 @@ h4 {
   border-radius: 25px;
   padding: 1%;
 }
+
+.grid-title {
+  position: relative;
+  font-size: 200%;
+  top: 7%;
+  left: 14%;
+}
+
 .grid-item {
+  position: relative;
+  top: 10%;
   padding: 25%;
   font-size: 300%;
   text-align: center;
