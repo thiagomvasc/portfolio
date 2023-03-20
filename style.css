@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
 
-  height: 100vh;
+  height: 70vh;
   aspect-ratio: 1.77;
 }
 .main {
@@ -24,7 +24,6 @@ body {
 
 .home {
   font-family: "Space Mono", monospace;
-
   color-scheme: light dark;
   color: #edf2f4;
   margin: 0;
@@ -34,43 +33,45 @@ body {
 
   position: relative;
 
-  width: 60%;
-  height: 100%;
+  width: 85vw;
+  height: 70vw;
 }
 
 .home > h1,
 h4 {
   position: relative;
-  top: 40%;
-  font-size: 150%;
-  width: 100%;
+  top: 20vw;
+  font-size: 2vw;
+  width: 50vw;
   margin: 0;
   color: #8d99ae;
 }
 
 .home > h2 {
   position: relative;
-  top: 40%;
+  top: 20vw;
   width: 100%;
   margin: 0;
-  font-size: 300%;
+  font-size: 3vw;
 }
 .home > h3 {
   position: relative;
-  top: 40%;
+  top: 20vw;
   width: 100%;
   margin: 0;
   color: #8d99ae;
-  font-size: 225%;
+  font-size: 2vw;
+}
+
+.social-media {
+  width: 2.5vw;
+  aspect-ratio: 1;
 }
 
 .accounts {
   position: relative;
-  top: 42%;
+  top: 21vw;
   scale: inherit;
-  left: 3%;
-
-  scale: 150%;
 
   float: left;
   filter: invert(100%);
@@ -79,25 +80,27 @@ h4 {
 .navbar {
   background-color: #8d99ae;
   position: absolute;
-  width: 100%;
-  height: 7%;
+  width: 98.9vw;
+  height: 5vw;
   list-style-type: none;
 }
 
 .navbar li,
 .navbar a {
   all: unset;
+  position: relative;
+  font-size: 2vw;
   display: inline;
   float: left;
-  padding-left: 2%;
+  padding-left: 2vw;
 }
 
 .about-me {
   position: relative;
   top: 25vh;
   background-color: #2b2d42;
-  width: 100%;
-  height: 100%;
+  width: 85vw;
+  height: 70vw;
 }
 
 .grid-container {
