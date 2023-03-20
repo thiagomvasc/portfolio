@@ -5,7 +5,6 @@
   color: #ef233c;
   color: #d90429;
 }
-
 body {
   font-family: "Space Mono", monospace;
 
@@ -17,51 +16,59 @@ body {
   padding: 0;
 
   height: 100vh;
-  width: 100vh;
+  aspect-ratio: 1.77;
 }
 .main {
   color: #ef233c;
 }
 
-.about-me {
+.home {
   font-family: "Space Mono", monospace;
 
   color-scheme: light dark;
   color: #edf2f4;
-  background-color: #2b2d42;
   margin: 0;
   font-weight: bold;
 
-  position: absolute;
+  margin-inline-start: 10%;
 
-  top: 250px;
-  left: 75px;
-  width: 50%;
+  position: relative;
+
+  width: 60%;
+  height: 100%;
 }
 
-.about-me > h1,
+.home > h1,
 h4 {
   position: relative;
-  font-size: 25px;
+  top: 40%;
+  font-size: 150%;
+  width: 100%;
   margin: 0;
   color: #8d99ae;
 }
 
-.about-me > h2 {
+.home > h2 {
+  position: relative;
+  top: 40%;
+  width: 100%;
   margin: 0;
-  font-size: 50px;
+  font-size: 300%;
 }
-.about-me > h3 {
+.home > h3 {
+  position: relative;
+  top: 40%;
+  width: 100%;
   margin: 0;
   color: #8d99ae;
-  font-size: 35px;
+  font-size: 225%;
 }
 
 .accounts {
   position: relative;
-  top: 10px;
+  top: 42%;
   scale: inherit;
-  left: 20px;
+  left: 3%;
 
   scale: 150%;
 
@@ -71,9 +78,9 @@ h4 {
 
 .navbar {
   background-color: #8d99ae;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 50px;
+  height: 7%;
   list-style-type: none;
 }
 
@@ -82,7 +89,30 @@ h4 {
   all: unset;
   display: inline;
   float: left;
-  padding-left: 19px;
+  padding-left: 2%;
+}
+
+.about-me {
+  position: relative;
+  top: 25vh;
+  background-color: #2b2d42;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  width: 35%;
+  height: 50%;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  border-radius: 25px;
+  padding: 1%;
+}
+.grid-item {
+  padding: 25%;
+  font-size: 300%;
+  text-align: center;
 }
 
 .tooltip {
@@ -92,16 +122,16 @@ h4 {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+  width: 320%;
+  background-color: #726651;
+  color: black;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5% 0;
 
   position: absolute;
-  left: 0px;
-  top: 30px;
+  left: 0%;
+  top: 100%;
   z-index: 1;
 }
 
